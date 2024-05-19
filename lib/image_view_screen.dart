@@ -27,23 +27,23 @@ class ImageViewScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 60, // Положение кнопки от верхнего края
-            right: 30, // Положение кнопки от правого края
+            top: 60,
+            right: 30,
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).pop();
               },
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.5), // Полупрозрачный черный фон
+                  color: Colors.black.withOpacity(0.5),
                   shape: BoxShape.circle,
                 ),
                 child: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.close,
-                    color: Colors.white, // Белый цвет иконки
-                    size: 32, // Размер иконки
+                    color: Colors.white,
+                    size: 32,
                   ),
                 ),
               ),
